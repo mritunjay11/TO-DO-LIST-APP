@@ -1,0 +1,139 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 1px black;
+    /* background: linear-gradient(#8338ec,#3a86ff);
+    background: linear-gradient(#8338ec,#023e8a); */
+    background-color: #6f1d1b;
+
+
+}
+
+.header-img{
+    width: 70px;
+    height: 50px;
+    border-radius: 100px;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+h1{
+    text-shadow: 0 0 1px black;
+    color: #ffe6a7;
+
+}
+
+
+button,input{
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    background-color: #bb9457;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#user-input{
+    margin-top: 50px;
+}
+
+.listitem{
+    padding: 8px;
+    background-color: #ffafcc;
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 4px;
+}
+
+
+
+button:hover{
+    background-color: #432818;
+    color: white;
+
+}
+
+.remove-btn{
+    background-color: #ade8f4;
+    color: black;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+
+.done-btn{
+    margin-left: 8px;
+}
+footer h2{
+    margin-right: 10px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    color: #ffe6a7;
+    display: flex;
+}
+.footer-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 25px;
+    border: 2px solid;
+}
+
+.list-conatiner {
+    max-height: 450px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: pink #6f1d1b;
+}
+
+@media (max-width:360px) {
+    .users-input-conatiner{
+    text-align: center;
+    margin-top: 10px;
+}
+#user-input {
+    margin-top: 10px;
+}
+#main-btn{
+    margin-top: 25px;
+    margin-bottom: 8px;
+
+}
+.main-list{
+    margin-top: 25px;
+}
+.header-img{
+    border: 2px solid #99582a;
+    text-shadow: none;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: #ffe6a7;
+    display: flex;
+    margin-right: 10px;
+}
+.footer-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 2px solid;
+}
+.list-conatiner {
+    max-height: 400px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: pink #6f1d1b;
+}
+}
