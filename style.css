@@ -92,6 +92,7 @@ footer{
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-color: pink #6f1d1b;
+    margin-top: 16px;
 }
 
 @media (max-width:360px) {
