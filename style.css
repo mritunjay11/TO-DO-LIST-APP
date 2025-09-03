@@ -98,21 +98,54 @@ footer{
 .form *{
     display: block;
     padding: 8px;
-    margin-top: 16px;
+    margin: 16px auto 0 auto;
 }
 .form .btn2{
     margin-bottom: 25px;
 }
+
 .form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #555;
+    text-align: center;
     margin: 0 auto 0 auto;
     padding-top: 25px;
     width: 50vw;
 }
+.login{
+    text-align: center;
+    color: white;
+}
+.login p{
+    margin: 0px;
+}
+.login button{
+    display: inline-block;
+}
+
+/* loding loder */
+.form.invisible{
+    display: none;
+}
+.form.visible{
+    display: block;
+}
+.container{
+    display: none;
+}
+.container.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+
+#logout-btn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+
+
 
 @media (max-width:360px) {
     .users-input-conatiner{

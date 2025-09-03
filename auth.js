@@ -1,9 +1,10 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Import Firebase CDN modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+import { 
+  getAuth, 
+  createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword 
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,4 +18,48 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-console.log(app,firebaseConfig)
+const auth = getAuth(app);
+
+// DOM Elements
+const submit = document.querySelector('#submit-btn');
+const form = document.querySelector('.form');
+const mainapp = document.querySelector('.container');
+
+// Signup
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const email = document.querySelector('#mail').value;
+  const password = document.querySelector('#Password').value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      debugger
+      form.classList.toggle('invisible')
+      alert("User created successfully!");
+      mainapp.classList.toggle('visible')
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});
+
+// Login
+const login = document.querySelector('#login-btn');
+
+login.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const email = document.querySelector('#mail').value;
+  const password = document.querySelector('#Password').value;
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      form.style.display = "none";
+      alert("You are logged in!");
+      mainapp.style.display = "block";
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});

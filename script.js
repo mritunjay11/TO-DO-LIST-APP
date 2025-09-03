@@ -1,3 +1,14 @@
+const logout=document.querySelector('.logout-btn')
+const form = document.querySelector('.form');
+const mainapp = document.querySelector('.container');
+
+logout.addEventListener('click',()=>{
+    debugger
+    mainapp.style.display="none"
+    form.style.display="block"
+
+})
+
 function add() {
     const Input=document.querySelector('#user-input')
     const ul_list=document.querySelector('.main-list')
