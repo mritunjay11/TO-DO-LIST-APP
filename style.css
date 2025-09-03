@@ -106,9 +106,12 @@ footer{
 
 .form{
     text-align: center;
-    margin: 0 auto 0 auto;
-    padding-top: 25px;
+    margin: 100px auto 0 auto;
+    padding: 25px;
     width: 50vw;
+    background-color: white;
+    border-radius: 20px
+    
 }
 .login{
     text-align: center;
@@ -116,6 +119,8 @@ footer{
 }
 .login p{
     margin: 0px;
+    color: black;
+    word-spacing: 2px;
 }
 .login button{
     display: inline-block;
