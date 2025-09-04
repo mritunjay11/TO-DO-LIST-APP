@@ -114,6 +114,26 @@ footer{
     max-width: 500px;
 
 }
+.primary{
+    border: initial;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+#login-btn{
+    all: initial;
+    background-color: initial;
+    color: #bb9457;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#login-btn:hover{
+    color: #704c12;
+    border-color: #704c12;
+
+}
 .login{
     text-align: center;
     color: white;
