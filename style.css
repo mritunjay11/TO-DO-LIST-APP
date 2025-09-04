@@ -85,6 +85,7 @@ footer{
     border-radius: 50%;
     margin-right: 25px;
     border: 2px solid;
+    margin-bottom: 5px;
 }
 
 .list-conatiner {
@@ -96,6 +97,8 @@ footer{
 }
 
 .form *{
+    display: block;
+    padding: 8px;
     margin: 16px auto 0 auto;
 }
 .form .btn2{
@@ -105,11 +108,11 @@ footer{
 .form{
     text-align: center;
     margin: 100px auto 0 auto;
-    padding: 0 0 25px 0;
+    padding: 25px;
     background-color: white;
     border-radius: 20px;
-    overflow: hidden;
-    
+    max-width: 500px;
+
 }
 .login{
     text-align: center;
@@ -144,19 +147,41 @@ footer{
 #logout-btn{
     position: fixed;
     left: 25px;
-    bottom: 23px;
+    bottom: 5px;
+}
+
+i{
+    margin: 5px;
+}
+@media (max-width:480px){
+    footer h2{
+        display: none;
+    }
 }
 
 
-
-
 @media (max-width:360px) {
+    .form{
+    text-align: center;
+    margin: 100px auto 0 auto;
+    padding: 0 0 25px 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    
+
+    
+}
+.form *{
+    margin: 16px auto 0 auto;
+}
     .users-input-conatiner{
     text-align: center;
     margin-top: 10px;
 }
 #user-input {
     margin-top: 10px;
+    width: 98%;
 }
 #main-btn{
     margin-top: 25px;
@@ -178,6 +203,16 @@ footer{
     color: #ffe6a7;
     display: flex;
     margin-right: 10px;
+}
+footer h2{
+    font-size: 1.2em;
+    display: none;
+}
+#logout-btn{
+    all: initial;
+    width: 100%;
+    text-align: end;
+    color: #ffe6a7;
 }
 .footer-img{
     width: 70px;
